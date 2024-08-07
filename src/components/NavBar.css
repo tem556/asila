@@ -1,0 +1,47 @@
+.custom-nav {
+    background-color: #1B2F4C;
+}
+
+.custom-nav-dropdown .dropdown-toggle::after {
+    border-top-color: white !important;
+}
+
+.custom-navbar-font {
+    color: white;
+    font-family: 'Changa', sans-serif;
+    /* Replace with your desired font */
+    font-size: 18px;
+    /* Adjust the font size */
+    font-weight: normal;
+    /* Adjust the font weight */
+    direction: rtl;
+    margin-right: auto;
+}
+
+.rtl-direction {
+    direction: rtl;
+}
+
+.full-width-navbar {
+    width: 100%;
+    position: fixed;
+    /* Optional: Fix the navbar at the top of the screen */
+    top: 0;
+    /* Optional: Ensure it stays at the top */
+    left: 0;
+    /* Optional: Ensure it starts from the very left of the screen */
+    z-index: 1030;
+    /* Ensure it stays above other content */
+}
+
+.custom-navbar-font {
+    color: white;
+    font-family: 'Changa', sans-serif;
+    /* Replace with your desired font */
+    font-size: 18px;
+    /* Adjust the font size */
+    font-weight: normal;
+    /* Adjust the font weight */
+    direction: rtl;
+    margin-right: auto;
+}

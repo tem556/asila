@@ -6,44 +6,8 @@
     margin-right: calc(0% - 50vw); /* Center the background color */
 }
 
-.custom-nav-dropdown .dropdown-toggle::after {
-    border-top-color: white !important;
-}
-
 .custom-text-white {
     color: white !important;
-}
-
-.custom-nav {
-    background-color: #1B2F4C;
-}
-
-.rtl-direction {
-    direction: rtl;
-}
-
-.full-width-navbar {
-    width: 100%;
-    position: fixed;
-    /* Optional: Fix the navbar at the top of the screen */
-    top: 0;
-    /* Optional: Ensure it stays at the top */
-    left: 0;
-    /* Optional: Ensure it starts from the very left of the screen */
-    z-index: 1030;
-    /* Ensure it stays above other content */
-}
-
-.custom-navbar-font {
-    color: white;
-    font-family: 'Changa', sans-serif;
-    /* Replace with your desired font */
-    font-size: 18px;
-    /* Adjust the font size */
-    font-weight: normal;
-    /* Adjust the font weight */
-    direction: rtl;
-    margin-right: auto;
 }
 
 .custom-home-font {
@@ -165,35 +129,6 @@
     color: #343a40;
     /* Custom dropdown menu text color */
     text-align: right;
-}
-
-.intro-text-style {
-    direction: rtl;
-    text-align: right;
-    margin-top: 2%;
-    font-family: 'Changa', sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 36;
-    color: #1B2F4C;
-}
-
-/* Styles for smaller screens */
-@media (max-width: 767.98px) {
-    .intro-text-style {
-        margin-top: 7%;
-    }
-}
-
-.intro-para-style {
-    direction: rtl;
-    text-align: right;
-    /* margin-top: 7%; */
-    font-family: 'Changa', sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 18;
-    color: #1B2F4C;
 }
 
 .img-size {

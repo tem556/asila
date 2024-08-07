@@ -1,4 +1,4 @@
-
+import './IntroText.css'
 
 function IntroText() {
     return (
