@@ -1,7 +1,7 @@
 import { Container, Image, Row, Col, Dropdown, DropdownButton } from 'react-bootstrap';
 import Book from '../assets/Book.png'
 import Medal from '../assets/Medal.png'
-import './styles.css'
+import './Card.css'
 
 function InfoCard() {
     return (
