@@ -27,22 +27,22 @@ function InfoCard() {
 
                     <Col className="d-flex flex-column justify-content-center align-items-start text-right order-1 order-md-2">
                         <Row className="row-pos">
-                            <Col className="d-flex justify-content-center align-items-center">
+                            <Col className="d-flex">
                                 <p className="custom-card-font">
                                     أفضل محتوى للتفوق و تحسين المستوى الأكاديمي لدى طلاب المدارس الحكومية في قطر
                                 </p>
                             </Col>
-                            <Col xs={1} className="d-flex justify-content-center align-items-center">
+                            <Col xs={1} className="d-flex justify-content-center img-col-pos">
                                 <Image src={Medal} className="img-size-medal"/>
                             </Col>
                         </Row>
                         <Row className="bottom-row-pos">
-                            <Col className="d-flex justify-content-center align-items-center">
+                            <Col className="d-flex">
                                 <p className="custom-card-font">
                                     مئات الملازم في شتى المواضيع في مكان واحد, سهلة التحميل و الاستخدام
                                 </p>
                             </Col>
-                            <Col xs={1} className="d-flex justify-content-center align-items-center">
+                            <Col xs={1} className="d-flex justify-content-center bottom-img-col-pos">
                                 <Image src={Book} className="img-size"/>
                             </Col>
                         </Row>

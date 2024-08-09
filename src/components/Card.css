@@ -65,6 +65,7 @@
     /* Adjust the font weight */
     direction: rtl;
     margin: auto;
+    margin-right: 2%;
 }
 
 /* Styles for smaller screens */
@@ -77,16 +78,25 @@
 
 .row-pos {
     margin-right: 7px;
+    align-items: start;
+}
+
+@media (min-width: 768px) {
+    .row-pos {
+        margin-top: 3%;
+        margin-bottom: -50px;   
+    }
 }
 
 .bottom-row-pos {
+    padding-top: 11%;
     margin-right: 7px;
-    padding-top: 3.7%;
+    align-items: center;
 }
 
 .left-row-pos {
     margin-right: 7px;
-    align-items: end;
+    align-items: start;
 }
 
 .bottom-left-row-pos {
@@ -102,7 +112,7 @@
 
 /* styles.css */
 .dropdown-pos .dropdown-toggle {
-    background-color: #D9EDFF;
+    background-color: white;
     /* Custom background color */
     color: #1B2F4C;
     /* Custom text color */
@@ -131,12 +141,13 @@
     text-align: right;
 }
 
-.img-size {
-    scale: 0.4;
-    align-self: center;
-}
-
 .img-size-medal {
     scale: 0.47;
-    align-self: center;
+    align-self: start;   
+    margin-top: -60%;
+}
+
+.img-size {
+    scale: 0.40;
+    align-self: start;
 }
