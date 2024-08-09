@@ -24,14 +24,16 @@
 
 
 .below-navbar {
-    margin-top: 46px;
+    margin-top: 39px;
 }
+
 
 /* Styles for bigger screens */
 @media (min-width: 768px) {
     .below-navbar {
+        margin-top: 46px;
         margin-left: 10%;
-        margin-right: 10%;
+        margin-right: 17%;
     }
 }
 

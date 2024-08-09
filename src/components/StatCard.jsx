@@ -16,7 +16,7 @@ function StatCard() {
     return (
         <div className="stat-wrapper">
             <Container fluid>
-                <Row className="flex-column flex-md-row full-width-box below-navbar">
+                <Row className="full-width-box below-deck">
                     {arr.map((img, i) => (
                         <Col key={i} className='flex-row flex-md-column col-style'>
                             <Image className="img-scale" src={img} />

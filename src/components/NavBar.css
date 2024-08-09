@@ -1,3 +1,19 @@
+.header-style {
+    color: 'white';
+    background-color: '#1B2F4C';
+    direction: 'rtl';
+    text-align: 'start';
+    font-family: 'Reem Kufi';
+    font-size: 40px;
+    font-style: 'normal''
+}
+
+@media (max-width: 767.9px) {
+    .header-style {
+        font-size: 30px;
+    }
+}
+
 .custom-nav {
     background-color: #1B2F4C;
 }
@@ -32,16 +48,6 @@
     /* Optional: Ensure it starts from the very left of the screen */
     z-index: 1030;
     /* Ensure it stays above other content */
+    margin-bottom: 0px;
 }
 
-.custom-navbar-font {
-    color: white;
-    font-family: 'Changa', sans-serif;
-    /* Replace with your desired font */
-    font-size: 18px;
-    /* Adjust the font size */
-    font-weight: normal;
-    /* Adjust the font weight */
-    direction: rtl;
-    margin-right: auto;
-}
