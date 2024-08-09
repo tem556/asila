@@ -69,3 +69,8 @@
     background-color: #1B2F4C;
     color: white;
 }
+
+.symbol-text:active {
+    background-color: #1B2F4C;
+    color: white;
+}

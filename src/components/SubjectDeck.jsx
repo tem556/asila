@@ -11,7 +11,6 @@ import PhysicsSymbol from '../assets/SubjectSymbols/PhysicsSymbol.png'
 import './SubjectDeck.css'
 
 function SubjectDeck() {
-    const colXs = 'auto';
 
     const ImgButton = ({ src, text }) => {
         return (

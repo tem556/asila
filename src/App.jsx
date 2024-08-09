@@ -4,6 +4,7 @@ import InfoCard from './components/Card';
 import NavBar from './components/NavBar';
 import IntroText from './components/IntroText';
 import SubjectDeck from './components/SubjectDeck';
+import StatCard from './components/StatCard';
 
 function App() {
   return(
@@ -11,6 +12,7 @@ function App() {
         <NavBar />
         <InfoCard />
         <SubjectDeck />
+        <StatCard />
         <IntroText />
      </div>
   )
