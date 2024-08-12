@@ -143,6 +143,13 @@
     text-align: right;
 }
 
+.custom-dropdown-item:hover,
+.custom-dropdown-item:focus,
+.custom-dropdown-item.active {
+  background-color: #1B2F4C !important;
+  color: white !important; /* Optional: Change text color for better contrast */
+}
+
 .img-size-medal {
     scale: 0.47;
     align-self: start;   

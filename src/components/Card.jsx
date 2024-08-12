@@ -3,27 +3,63 @@ import Book from '../assets/Book.png'
 import Medal from '../assets/Medal.png'
 import './Card.css'
 
-const FirstCol = () => (
+const gradeText = {
+    1: "الأول", 2: "الثاني", 3: "الثالث", 4: "الرابع",
+    5: "الخامس", 6: "السادس", 7: "السابع", 8: "الثامن",
+    9: "التاسع", 10: "العاشر", 11: "الحادي عشر", 12: "الثاني عشر"
+}
+
+const termText = {
+    1: "الفصل الأول",
+    2: "الفصل الثاني"
+}
+
+
+
+const GradeRow = ({ grade, setGrade }) => (
+    <Row className="left-row-pos">
+        <h5 className="custom-card-font">اختر المستوى الأكاديمي:</h5>
+        <DropdownButton
+            id="dropdown-basic-button"
+            onSelect={(eventKey) => setGrade(eventKey)}
+            title={gradeText[grade]}
+            className="dropdown-pos"
+            align="end"
+        >
+            {Object.values(gradeText).map((value, index) => (
+                <Dropdown.Item
+                    key={index + 1}
+                    eventKey={index + 1}
+                    className='custom-dropdown-item'
+                >
+                    {value}
+                </Dropdown.Item>
+            ))}
+
+        </DropdownButton>
+    </Row>
+)
+
+const TermRow = ({ term, setTerm }) => (
+    <Row className="bottom-left-row-pos">
+        <h5 className="custom-card-font">اختر الفصل الدراسي:</h5>
+        <DropdownButton
+            id="dropdown-basic-button"
+            title={termText[term]}
+            className="dropdown-pos"
+            align="end"
+            onSelect={(eventKey) => setTerm(eventKey)}
+        >
+            <Dropdown.Item eventKey={1} className='custom-dropdown-item'>الفصل الأول</Dropdown.Item>
+            <Dropdown.Item eventKey={2} className='custom-dropdown-item'>الفصل الثاني</Dropdown.Item>
+        </DropdownButton>
+    </Row>
+)
+
+const FirstCol = ({ grade, setGrade, term, setTerm }) => (
     <Col className="text-right order-2 order-md-1 col-pos">
-        <Row className="left-row-pos">
-            <h5 className="custom-card-font">اختر المستوى الأكاديمي:</h5>
-            <DropdownButton
-                id="dropdown-basic-button"
-                onSelect={() => console.log('selected dropdown')}
-                title="12 علمي"
-                className="dropdown-pos"
-                align="end"
-            >
-                <Dropdown.Item href="#/action-1">علمي 11</Dropdown.Item>
-            </DropdownButton>
-        </Row>
-        <Row className="bottom-left-row-pos">
-            <h5 className="custom-card-font">اختر الفصل الدراسي:</h5>
-            <DropdownButton id="dropdown-basic-button" title="الفصل الأول" className="dropdown-pos" align="end">
-                <Dropdown.Item href="#/action-1">الفصل الأول</Dropdown.Item>
-                <Dropdown.Item href="#/action-1">الفصل الثاني</Dropdown.Item>
-            </DropdownButton>
-        </Row>
+        <GradeRow grade={grade} setGrade={setGrade} />
+        <TermRow term={term} setTerm={setTerm} />
     </Col>
 )
 
@@ -53,12 +89,17 @@ const SecondCol = () => (
 )
 
 
-function InfoCard() {
+function InfoCard({ grade, setGrade, term, setTerm }) {
     return (
         <div className="full-width-wrapper">
             <Container fluid>
                 <Row className="flex-column flex-md-row full-width-box below-navbar">
-                    <FirstCol />
+                    <FirstCol
+                        grade={grade}
+                        setGrade={setGrade}
+                        term={term}
+                        setTerm={setTerm}
+                    />
                     <SecondCol />
                 </Row>
             </Container>
