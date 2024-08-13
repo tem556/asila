@@ -1,7 +1,7 @@
 import { Container, Image, Row, Col, Dropdown, DropdownButton } from 'react-bootstrap';
 import Book from '../assets/Book.png'
 import Medal from '../assets/Medal.png'
-import './Card.css'
+import './InfoCard.css'
 
 const gradeText = {
     1: "الأول", 2: "الثاني", 3: "الثالث", 4: "الرابع",
