@@ -12,6 +12,7 @@ import IntroText from './components/IntroText';
 import SubjectDeck from './components/SubjectDeck';
 import StatCard from './components/StatCard';
 import Footer from './components/Footer';
+import SubjectIntroText from './components/SubjectIntroText';
 
 function App() {
   const [grade, setGrade] = useState(12);
@@ -33,15 +34,13 @@ function App() {
 
   return (
     <div className="App">
-      <Router>
         <NavBar />
         <Routes>
-          <Route path="/notes" element={<StatCard />} />
+          <Route path="/subject" element={<SubjectIntroText />} />
           <Route path="/users" element={<div>test</div>} />
           <Route path="/" element={<Home />} />
         </Routes>
         <Footer />
-      </Router>
     </div>
   )
 }

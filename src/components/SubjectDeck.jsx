@@ -1,4 +1,5 @@
 import { Button, Row, Col } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 import ArabicImg from '../assets/SubjectSymbols/ArabicSymbol.png'
 import ChemistryImg from '../assets/SubjectSymbols/ChemistrySymbol.png'
 import BiologyImg from '../assets/SubjectSymbols/BiologySymbol.png'
@@ -18,7 +19,7 @@ function SubjectDeck() {
             sm={4}
             md={3}
             lg={3}>
-                <Button className="circular-button">
+                <Button className="circular-button" as={Link} to="/subject">
                     <img src={src} alt="icon" className="button-icon" />
                 </Button>
                 <Button className={'symbol-text'}> <div className=" align-content-center"> {text} </div> </Button>
