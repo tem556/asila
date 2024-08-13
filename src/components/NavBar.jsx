@@ -1,5 +1,6 @@
 import Container from 'react-bootstrap/Container';
 import Navbar from 'react-bootstrap/Navbar';
+import { Link } from 'react-router-dom';
 import './NavBar.css'
 
 function NavBar() {
@@ -11,7 +12,7 @@ function NavBar() {
       <link rel="preconnect" href="https://fonts.gstatic.com"/>
       <link href="https://fonts.googleapis.com/css2?family=Changa:wght@200..800&family=Reem+Kufi:wght@400..700&display=swap" rel="stylesheet"/>
       <Container>
-        <Navbar.Brand href="#home" className="text-white header-style">بيت المذاكرة</Navbar.Brand>
+        <Navbar.Brand as={Link} to="/" className="text-white header-style">بيت المذاكرة</Navbar.Brand>
         <Navbar.Toggle 
         aria-controls="basic-navbar-nav"   
         className='custom-toggler navbar-toggler-border'/>
