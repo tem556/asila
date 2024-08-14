@@ -35,7 +35,7 @@ function App() {
         term={term}
         setTerm={setTerm}
       />
-      
+
       <SubjectDeck
         grade={grade}
         term={terms[term - 1]}
@@ -43,6 +43,14 @@ function App() {
       <StatCard />
       <IntroText />
     </div>
+  )
+
+  const SubjectPage = ({gradeNumber, subjectNumber, termLetter}) => (
+    <SubjectIntroText
+      grade={gradeNumber}
+      subject={subjectNumber}
+      term={termLetter}
+    />
   )
 
   return (
@@ -56,11 +64,10 @@ function App() {
                 key={gradeNumber + subjects[subjectNumber]}
                 path={"/" + gradeNumber + "/" + termLetter + "/" + subjects[subjectNumber]}
                 element={
-                  <SubjectIntroText
-                    grade={gradeNumber}
-                    subject={subjectNumber}
-                    term={term}
-                  />
+                  <SubjectPage 
+                    gradeNumber={gradeNumber} 
+                    subjectNumber={subjectNumber} 
+                    termLetter={termLetter}/>
                 }
               />
             ))

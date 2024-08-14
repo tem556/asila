@@ -14,8 +14,8 @@ function SubjectIntroText({ grade, subject, term }) {
     }
 
     const termText = {
-        1: "الفصل الأول",
-        2: "الفصل الثاني"
+        A: "الأول",
+        B: "الثاني"
     }
 
     const marginTopStyle = window.innerWidth < 576 ? '20%' : '7%'
@@ -25,7 +25,13 @@ function SubjectIntroText({ grade, subject, term }) {
         <div>
             <h1 className="intro-text-style" style={{ marginTop: marginTopStyle }}> موارد مادة {subjectText[subject]} </h1>
             <p className="intro-para-style">
-                هنا يمكنك العثور على المراجعات المتنوعة، والامتحانات السابقة، وحلول التمارين الخاصة بمادة {subjectText[subject]}  للصف {gradeText[grade]} في قطر
+                {"هنا يمكنك العثور على المراجعات المتنوعة، والامتحانات السابقة، وحلول التمارين الخاصة بمادة "}
+                {subjectText[subject]}
+                {" للصف "}
+                {gradeText[grade]}
+                {" للفصل "}
+                {termText[term]}
+                {" .إذا أردت تغيير أي من الخيارات, الرجاء الرجوع إلى الصفحة الرئيسية."}
             </p>
             <p className='intro-para-style' style={{ marginTop: paraTopStyle }}>
                 اضغط على القائمة المناسبة للتنقل بين الامتحانات السابقة، الملازم، والكتب:
