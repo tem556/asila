@@ -12,13 +12,23 @@ import PhysicsSymbol from '../assets/SubjectSymbols/PhysicsSymbol.png'
 import './SubjectDeck.css'
 
 function SubjectDeck() {
+    const subjects = Array.from({ length: 8}, (_, i) => i + 1);
+    const subjectTexts = {
+        1: 'التربية الإسلامية', 2: 'اللغة العربية', 3: 'الفيزياء', 4: 'الكيمياء', 
+        5: 'الأحياء', 6: 'الرياضيات', 7: 'اللغة الأنجليزية', 8: 'تكنولوجيا المعلمومات'
+    }
+
+    const subjectImgs = {
+        1: ISSymbol, 2: ArabicImg, 3: PhysicsSymbol, 4: ChemistryImg, 
+        5: BiologyImg, 6: MathImg, 7: EnglishSymbol, 8: ITSymbol
+    }
 
     const ImgButton = ({ src, text }) => {
         return (
             <Col xs={6}
-            sm={4}
-            md={3}
-            lg={3}>
+                sm={4}
+                md={3}
+                lg={3}>
                 <Button className="circular-button" as={Link} to="/subject">
                     <img src={src} alt="icon" className="button-icon" />
                 </Button>
@@ -27,26 +37,17 @@ function SubjectDeck() {
         )
     }
 
-    const ImgRow = ({ img1, img2, img3, img4, text1, text2, text3, text4 }) => (
-        <Row className="icon-row-pos d-flex flex-row justify-content-center">
-            <ImgButton src={img1} text={text1} />
-            <ImgButton src={img2} text={text2} />
-            <ImgButton src={img3} text={text3} />
-            <ImgButton src={img4} text={text4} />
-        </Row>
-    )
-
     return (
         <div className="deck-pos">
             <h1 className="heading-style">أختر المادة المناسبة:</h1>
-            <ImgRow
-                img1={ArabicImg} img2={ChemistryImg} img3={BiologyImg} img4={MathImg}
-                text1={'اللغة العربية'} text2={'الكيمياء'} text3={'الأحياء'} text4={'الرياضيات'}
-            />
-            <ImgRow
-                img1={PhysicsSymbol} img2={ITSymbol} img3={ISSymbol} img4={EnglishSymbol}
-                text1={'الفيزياء'} text2={'تكنولوجيا المعلمومات'} text3={'التربية الإسلامية'} text4={'اللغة الأنجليزية'}
-            />
+
+            <Row className="icon-row-pos d-flex flex-row justify-content-center">
+                {subjects.map((i) => (
+                    <ImgButton key={subjectTexts[i]} text={subjectTexts[i]}  src={subjectImgs[i]}  />
+                ))
+
+                }
+            </Row>
         </div>
     )
 }
