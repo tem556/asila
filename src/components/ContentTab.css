@@ -1,0 +1,37 @@
+.custom-tabs .nav-link {
+    color: #1B2F4C;
+    font-family: 'Changa', sans-serif;
+    /* Replace with your desired font */
+    font-size: 17px;
+    /* Adjust the font size */
+    font-weight: normal;
+    /* Adjust the font weight */
+    direction: rtl;
+    margin-right: auto;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: none;
+}
+
+.custom-tabs .nav-link.active {
+    /* color: white; /* Text color for active tab */
+    /* background-color: #1B2F4C; /* Background color for active tab */
+    border-bottom: solid 4px #1B2F4C;
+    font-weight: bold;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+
+.custom-tabs .nav-link:active,
+.custom-tabs .nav-link:hover,
+.custom-tabs .nav-link:focus {
+    /* color: white; /* Text color for active tab */
+    /* background-color: #1B2F4C; /* Background color for active tab */
+    border-bottom: solid 4px #1B2F4C !important;
+    font-weight: bold;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}

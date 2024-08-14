@@ -12,6 +12,7 @@ import SubjectDeck from './components/SubjectDeck';
 import StatCard from './components/StatCard';
 import Footer from './components/Footer';
 import SubjectIntroText from './components/SubjectIntroText';
+import ContentTab from './components/ContentTab';
 
 function App() {
   const grades = Array.from({ length: 12 }, (_, i) => i + 1);
@@ -45,12 +46,15 @@ function App() {
     </div>
   )
 
-  const SubjectPage = ({gradeNumber, subjectNumber, termLetter}) => (
-    <SubjectIntroText
-      grade={gradeNumber}
-      subject={subjectNumber}
-      term={termLetter}
-    />
+  const SubjectPage = ({ gradeNumber, subjectNumber, termLetter }) => (
+    <div>
+      <SubjectIntroText
+        grade={gradeNumber}
+        subject={subjectNumber}
+        term={termLetter}
+      />
+      <ContentTab />
+    </div>
   )
 
   return (
@@ -64,10 +68,10 @@ function App() {
                 key={gradeNumber + subjects[subjectNumber]}
                 path={"/" + gradeNumber + "/" + termLetter + "/" + subjects[subjectNumber]}
                 element={
-                  <SubjectPage 
-                    gradeNumber={gradeNumber} 
-                    subjectNumber={subjectNumber} 
-                    termLetter={termLetter}/>
+                  <SubjectPage
+                    gradeNumber={gradeNumber}
+                    subjectNumber={subjectNumber}
+                    termLetter={termLetter} />
                 }
               />
             ))
