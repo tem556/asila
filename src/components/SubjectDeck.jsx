@@ -22,7 +22,7 @@ function SubjectDeck() {
                 <Button className="circular-button" as={Link} to="/subject">
                     <img src={src} alt="icon" className="button-icon" />
                 </Button>
-                <Button className={'symbol-text'}> <div className=" align-content-center"> {text} </div> </Button>
+                <Button className='symbol-text'> <div className="align-content-center"> {text} </div> </Button>
             </Col>
         )
     }

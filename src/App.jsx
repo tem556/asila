@@ -1,7 +1,6 @@
 import { useState } from 'react'
 import {
-  BrowserRouter as Router,
-  Routes, Route, Link
+  Routes, Route
 } from 'react-router-dom'
 
 import './App.css';
@@ -15,8 +14,18 @@ import Footer from './components/Footer';
 import SubjectIntroText from './components/SubjectIntroText';
 
 function App() {
-  const [grade, setGrade] = useState(12);
-  const [term, setTerm] = useState(1);
+  const grades = Array.from({ length: 12 }, (_, i) => i + 1);
+  const subjectNumbers = Array.from({ length: 8 }, (_, i) => i + 1);
+  const terms = ["A", "B"]
+
+  const subjects = {
+    1: "IslamicStudies", 2: "Arabic", 3: "Physics",
+    4: "Chemistry", 5: "Biology", 6: "Mathematics",
+    7: "English", 8: "IT"
+  }
+
+  const [grade, setGrade] = useState(12)
+  const [term, setTerm] = useState(1)
 
   const Home = () => (
     <div>
@@ -34,13 +43,29 @@ function App() {
 
   return (
     <div className="App">
-        <NavBar />
-        <Routes>
-          <Route path="/subject" element={<SubjectIntroText />} />
-          <Route path="/users" element={<div>test</div>} />
-          <Route path="/" element={<Home />} />
-        </Routes>
-        <Footer />
+      <NavBar />
+      <Routes>
+        {grades.map((gradeNumber) => (
+          subjectNumbers.map((subjectNumber) => (
+            terms.map((termLetter) =>
+              <Route
+                key={gradeNumber + subjects[subjectNumber]}
+                path={"/" + gradeNumber + "/" + termLetter + "/" + subjects[subjectNumber]}
+                element={
+                  <SubjectIntroText
+                    grade={gradeNumber}
+                    subject={subjectNumber}
+                    term={term}
+                  />
+                }
+              />
+            ))
+          ))
+        )}
+
+        <Route path="/" element={<Home />} />
+      </Routes>
+      <Footer />
     </div>
   )
 }
