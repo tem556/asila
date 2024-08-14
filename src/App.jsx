@@ -35,7 +35,11 @@ function App() {
         term={term}
         setTerm={setTerm}
       />
-      <SubjectDeck />
+      
+      <SubjectDeck
+        grade={grade}
+        term={terms[term - 1]}
+      />
       <StatCard />
       <IntroText />
     </div>
