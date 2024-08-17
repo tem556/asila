@@ -71,7 +71,7 @@ const SecondCol = () => (
                     أفضل محتوى للتفوق و تحسين المستوى الأكاديمي لدى طلاب المدارس الحكومية في قطر
                 </p>
             </Col>
-            <Col xs={1} className="d-flex justify-content-center img-col-pos">
+            <Col xs={1} className="d-flex justify-content-center img-col">
                 <Image src={Medal} className="img-size-medal" />
             </Col>
         </Row>
@@ -81,7 +81,7 @@ const SecondCol = () => (
                     مئات الملازم في شتى المواضيع في مكان واحد, سهلة التحميل و الاستخدام
                 </p>
             </Col>
-            <Col xs={1} className="d-flex justify-content-center bottom-img-col-pos">
+            <Col xs={1} className="d-flex justify-content-center">
                 <Image src={Book} className="img-size" />
             </Col>
         </Row>

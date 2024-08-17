@@ -1,6 +1,6 @@
 /* Base styles for all screen sizes */
 .stat-wrapper {
-    background-color: #e3f2fd; /* Adjust based on your design */
+    background-color: #F5F5F5; /* Adjust based on your design */
     width: 100vw; /* Full width of the viewport */
     margin-left: calc(50% - 50vw); /* Center the background color */
     margin-right: calc(50% - 50vw); /* Center the background color */
