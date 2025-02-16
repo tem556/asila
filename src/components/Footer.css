@@ -1,0 +1,18 @@
+.footer-style {
+    width: 100vw;
+    background-color: #1B2F4C;
+    font-family: 'Changa', sans-serif;
+    /* Adjust the font size */
+    font-weight: normal;
+    margin: 0; 
+    padding: 0;
+    margin-left: calc(50% - 50vw); /* Center the background color */
+    margin-right: calc(0% - 50vw); /* Center the background color */
+    margin-bottom: -50px;
+}
+
+.center-row {
+    justify-content: center;
+    margin-right: 13%;
+    margin-left: 13%;
+}

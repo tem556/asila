@@ -1,0 +1,69 @@
+/* Base styles for all screen sizes */
+.stat-wrapper {
+    background-color: #F5F5F5; /* Adjust based on your design */
+    width: 100vw; /* Full width of the viewport */
+    margin-left: calc(50% - 50vw); /* Center the background color */
+    margin-right: calc(50% - 50vw); /* Center the background color */
+}
+
+.below-deck {
+    margin-top: 46px;
+}
+
+/* Styles for bigger screens */
+@media (min-width: 768px) {
+    .below-deck {
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+}
+
+.img-scale {
+    display: block; /* Make sure there are no inline spaces around */
+    width: 30%; /* Adjust the width of the image */
+    height: auto; /* Maintain the aspect ratio */
+    padding: 0;
+    margin: 0 auto; /* Center the image horizontally */
+    transform: scale(0.6); /* Scale down the image */
+    transform-origin: center center; /* Scale from the center */
+}
+
+@media (max-width:767.9px) {
+    .img-scale {
+        width:90%;
+    }
+}
+
+.col-style {
+    margin-top: -35px;
+    margin-bottom: -10px;
+    justify-content: center;
+    align-content: center;
+}
+
+.stat-text {
+    margin-top: -20px;
+    direction: rtl;
+    text-align: center;
+    /* margin-top: 7%; */
+    font-family: 'Changa', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: px;
+    color: #1B2F4C;
+}
+
+@media (max-width: 767.9px) {
+    .col-style {
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+}
+
+@media (max-width: 767.9px) {
+    .stat-text {
+        margin-top: 0;
+        margin-bottom: 0px;
+    }
+}
+

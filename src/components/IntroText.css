@@ -1,0 +1,34 @@
+.intro-text-style {
+    direction: rtl;
+    text-align: right;
+    margin-top: 5%;
+    font-family: 'Changa', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36;
+    color: #1B2F4C;
+}
+
+/* Styles for smaller screens */
+@media (max-width: 767.98px) {
+    .intro-text-style {
+        margin-top: 7%;
+    }
+}
+
+.intro-para-style {
+    direction: rtl;
+    text-align: right;
+    /* margin-top: 7%; */
+    font-family: 'Changa', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    color: #1B2F4C;
+}
+
+@media (max-width: 767.98px) {
+    .intro-para-style {
+        font-size: 16px;
+    }
+}

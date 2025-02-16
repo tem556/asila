@@ -1,0 +1,110 @@
+.custom-tabs .nav-link {
+    color: #1B2F4C;
+    font-family: 'Changa', sans-serif;
+    /* Replace with your desired font */
+    font-size: 17px;
+    /* Adjust the font size */
+    font-weight: normal;
+    /* Adjust the font weight */
+    direction: rtl;
+    margin-right: auto;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: none;
+}
+
+.custom-tabs .nav-link.active {
+    /* color: white; /* Text color for active tab */
+    /* background-color: #1B2F4C; /* Background color for active tab */
+    border-bottom: solid 4px #1B2F4C;
+    font-weight: bold;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+
+.custom-tabs .nav-link:active,
+.custom-tabs .nav-link:hover,
+.custom-tabs .nav-link:focus {
+    /* color: white; /* Text color for active tab */
+    /* background-color: #1B2F4C; /* Background color for active tab */
+    border-bottom: solid 4px #1B2F4C !important;
+    font-weight: bold;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+
+.file-row {
+    justify-content: end;
+}
+
+.custom-strong {
+    font-weight: 450;
+}
+
+.text-col {
+    color: black;
+    text-align: right;
+    direction: rtl;
+    font-size: 12px;
+    font-family: 'Changa';
+    font-weight: 250;
+    margin: 0%;
+    padding: 0;
+    line-height: 10px; 
+    padding-bottom: 7%;
+}
+
+@media(min-width: 768px) {
+    .text-col {
+        font-size: 14px;
+        padding-bottom: 1%;
+    }
+}
+
+.img-container {
+    width: 80%;
+    height: 90%;
+}
+
+@media(min-width: 768px) {
+    .img-container {
+        width: 40%;
+    }
+}
+
+.img-col-file {
+    /* display: block; /* Make sure there are no inline spaces around */
+    /* transform: scale(0.6); /* Scale down the image */
+    /* width: 100%; /* Adjust the width of the image */
+    padding: 0%;
+    margin: 0%;
+    width: 100%;
+    height: auto;
+    display: block;
+    min-width: 100%
+}
+
+.img-col-1 {
+    padding: 0%;
+    margin: 0%;
+}
+
+@media(min-width: 768px) {
+    .img-col-1 {
+        margin-left: -100px;
+    }
+}
+
+
+.custom-hr {
+    border: 0; /* Remove default border */
+    height: 1px; /* Set the height of the line */
+    background-color: grey; /* Line color */
+    margin-top: 10px; /* Adjust spacing above the line */
+    margin-bottom: 10px; /* Adjust spacing below the line */
+}
+
+
